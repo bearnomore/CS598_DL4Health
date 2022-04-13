@@ -6,7 +6,7 @@ The original paper did not mention which version of MIMIC III datasets and which
 1. ADMISSION.csv 
     This dataset was used to extract "SUBJECT_ID" of patients that had at least two encounters/admissions, and to verify the demographic statistics performed in the paper (Appendix 1).
     
-2. PROCEDURES_ICD.csv, D_ICD_PROCEDURES.csv, DIAGNOSES.csv and D_ICD_DIAGNOSES.csv
+2. DIAGNOSES.csv and D_ICD_DIAGNOSES.csv
     These datasets were used to buld the ICD code feature.
     
 3. PRISCRIPTIONS.csv
