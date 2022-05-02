@@ -1,12 +1,12 @@
 # CS598_DL4Health
-    This is the project script repository for UIUC course CS598 Deap Learning for Health Data-Reproducing the Paper "Learning Latent Space Representations to Predict Patient Outcomes: Model Development and Validation. The original github repository is https://github.com/subendhu19/CLOUT
+This is the project script repository for UIUC course CS598 Deap Learning for Health Data-Reproducing the Paper "Learning Latent Space Representations to Predict Patient Outcomes: Model Development and Validation. The original github repository is https://github.com/subendhu19/CLOUT
 
 ## Datasets preprocessing
-    After communication with the author of the paper, structured datasets from MIMIC-III (version 1.4) were preprocessed using the script `Data_processing_modified_from_source_code.ipynb` modified from the author provided processing script `process_mimic.py`. 
+After communication with the author of the paper, structured datasets from MIMIC-III (version 1.4) were preprocessed using the script Data_processing_modified_from_source_code.ipynb` modified from the author provided processing script `process_mimic.py`. 
 
 ## Modeling Scripts
-    Scripts developed during the report drafting phase of the project were all put in the folder "Old_codes". 
-    Scripts updated and developed for the final report include the follows:
+Scripts developed during the report drafting phase of the project were all put in the folder "Old_codes". 
+Scripts updated and developed for the final report include the follows:
     
 ### Baseline Models 
 1. Logistic Regression + concatednated features: `Logistic Regression Modified from Source Code.ipynb` 
