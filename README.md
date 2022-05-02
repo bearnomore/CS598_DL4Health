@@ -1,16 +1,22 @@
 # CS598_DL4Health
-This is the project script repository for UIUC course CS598 Deap Learning for Health Data-Reproducing the Paper "Learning Latent Space Representations to Predict Patient Outcomes: Model Development and Validation. The original github repository is https://github.com/subendhu19/CLOUT
+    This is the project script repository for UIUC course CS598 Deap Learning for Health Data-Reproducing the Paper "Learning Latent Space Representations to Predict Patient Outcomes: Model Development and Validation. The original github repository is https://github.com/subendhu19/CLOUT
 
-## Datasets
-The original paper did not mention which version of MIMIC III datasets and which particular sets were used to build up the input dataset "p-MIMIC". Based on the Appendix 1, the following datasets from MIMIC III 1.4 were used to reproduce this paper:
-1. ADMISSION.csv 
-    This dataset was used to extract "SUBJECT_ID" of patients that had at least two encounters/admissions, and to verify the demographic statistics performed in the paper (Appendix 1).
+## Datasets preprocessing
+    After communication with the author of the paper, structured datasets from MIMIC-III (version 1.4) were preprocessed using the script `Data_processing_modified_from_source_code.ipynb` modified from the author provided processing script `process_mimic.py`. 
+
+## Modeling Scripts
+    Scripts developed during the report drafting phase of the project were all put in the folder "Old_codes". 
+    Scripts updated and developed for the final report include the follows:
     
-2. DIAGNOSES.csv and D_ICD_DIAGNOSES.csv
-    These datasets were used to buld the ICD code feature.
+### Baseline Models 
+1. Logistic Regression + concatednated features: `Logistic Regression Modified from Source Code.ipynb` 
+2. RETAIN: `Baseline_RETAIN_ICD9.ipynb` (Using only Diagnosis ICD9 codes); `Baseline_RETAIN_All_Features.ipynb` (Using concatenated ICD+Med+Lab).
+3. CLOUT with Auto-Encoder (AE): `AE_modified_from_source_code.ipynb` (Generating hidden states that are used to weight the concatenated features for CLOUT), `CLOUT_and_AE_modifed_from_source_code.ipynb`. 
+4. LSTM: 
+
+### CLOUT Models (with correlated latent space embeddings)
+1. CAE (Correlated Auto-Encoder that generate the latent space embeddings): `CAE_modifed_from_source_code.ipynb`
+2. CLOUT + concatenated features: `CLOUT_Concat_modifed_from_surce_code.ipynb` 
+3. CLOUT + latent space only: 
+4. CLOUT + latent space with concatenated features" `CLOUT_Concat_Latent_modified_from_source_code.ipynb`
     
-3. PRISCRIPTIONS.csv
-    This dataset was used to build the medication feature.
-    
-4. LABEVENTS.csv and D_LABITEMS.csv
-    This dataset was used to build the laboratory feature.
