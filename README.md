@@ -12,7 +12,7 @@ Scripts updated and developed for the final report include the follows:
 1. Logistic Regression + concatednated features: `Logistic Regression Modified from Source Code.ipynb` 
 2. RETAIN: `Baseline_RETAIN_ICD9.ipynb` (Using only Diagnosis ICD9 codes); `Baseline_RETAIN_All_Features.ipynb` (Using concatenated ICD+Med+Lab).
 3. CLOUT with Auto-Encoder (AE): `AE_modified_from_source_code.ipynb` (Generating hidden states that are used to weight the concatenated features for CLOUT), `CLOUT_and_AE_modifed_from_source_code.ipynb`. 
-4. LSTM: 
+4. LSTM: `LSTM_ICD9.ipynb`
 
 ### CLOUT Models (with correlated latent space embeddings)
 1. CAE (Correlated Auto-Encoder that generate the latent space embeddings): `CAE_modifed_from_source_code.ipynb`
