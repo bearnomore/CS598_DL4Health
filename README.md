@@ -15,8 +15,11 @@ Scripts updated and developed for the final report include the follows:
 4. LSTM: `LSTM_ICD9.ipynb`
 
 ### CLOUT Models (with correlated latent space embeddings)
-1. CAE (Correlated Auto-Encoder that generate the latent space embeddings): `CAE_modifed_from_source_code.ipynb`
-2. CLOUT + concatenated features: `CLOUT_Concat_modifed_from_surce_code.ipynb` 
-3. CLOUT + latent space only: 
-4. CLOUT + latent space with concatenated features" `CLOUT_Concat_Latent_modified_from_source_code.ipynb`
+1. AE (Auto-Encoder that generates the AE embeddings): `AE_modified_from_source_code.ipynb`
+2. CAE (Correlated Auto-Encoder that generates the latent space embeddings): `CAE_modifed_from_source_code.ipynb`
+3. CLOUT + AE only: `CLOUT_and_AE_modifed_from_source_code.ipynb`
+3. CLOUT + AE with concatenated features: `CLOUT_and_AE_concatenation_modified_from_source_code.ipynb`
+4. CLOUT + concatenated features: `CLOUT_Concat_modifed_from_surce_code.ipynb` 
+5. CLOUT + latent space only: `CLOUT_and_Latent_Space_only_modified_from_source_code.ipynb`
+6. CLOUT + latent space with concatenated features" `CLOUT_Concat_Latent_modified_from_source_code.ipynb`
     
